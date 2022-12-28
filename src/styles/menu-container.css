@@ -1,0 +1,15 @@
+.menu-wrapper {
+  background-color: #393c49;
+  max-width: 50%;
+}
+
+.h2 {
+}
+.menu-items-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0 50px 0;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+}
