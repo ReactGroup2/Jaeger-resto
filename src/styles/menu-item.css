@@ -1,0 +1,50 @@
+.item-container {
+  background-color: #1f1d2b;
+  border-radius: 16px;
+  padding: 24px 15px 20px 15px;
+  margin: 30px 5px 30px 5px;
+}
+
+.food-icon {
+  position: relative;
+  top: -58px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-right: 11px;
+  flex-wrap: wrap;
+  margin-top: -65px;
+  max-width: 170px;
+}
+
+.food-title {
+  padding-top: 16px;
+  margin-left: -5%;
+  margin-right: 10%;
+  font-size: 16px;
+}
+
+.food-price-availability-wrapper {
+  width: 150%;
+  margin-left: -25%;
+}
+
+.food-price {
+  color: white;
+  padding-bottom: 8px;
+  font-size: 16px;
+  max-width: 150%;
+}
+
+.food-availability {
+  font-size: 16px;
+  color: #abbbc2;
+  font-style: normal;
+  line-height: 140%;
+  padding-left: 15px;
+}
