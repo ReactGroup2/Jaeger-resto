@@ -1,24 +1,24 @@
 .navbar {
-  width: 100%;
-  height: 20rem;
+	width: 100%;
+	height: 20rem;
 }
 .options {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding: 1rem;
-  gap: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+	padding: 1rem;
+	gap: 2rem;
 }
 
 .options li {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 1rem;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 1rem;
 }
 
 .options li:hover {
-  color: #ea7c69;
+	color: #ea7c69;
 }

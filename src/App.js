@@ -1,9 +1,9 @@
-import MenuContainer from "./components/MenuContainer";
+import Home from "./components/Home";
 
 function App() {
 	return (
 		<div className="App">
-			<MenuContainer />
+			<Home />
 		</div>
 	);
 }
