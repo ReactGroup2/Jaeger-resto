@@ -4,7 +4,7 @@ import beefDumpling from "./assets/beef-dumpling.png";
 import healthyNoodle from "./assets/healthy-peanut-noodle.png";
 import omeletteRice from "./assets/fried-rice-omelette.png";
 import spicyNoodle from "./assets/spicy-noodle-omelette.png";
-import chickenNoodle from "./assets/sgpicy-chicken-noodle.png";
+import chickenNoodle from "./assets/spicy-chicken-noodle.png";
 import shrimpSoup from "./assets/shrimp-soup.png";
 
 const data = [
