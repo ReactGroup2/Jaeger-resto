@@ -1,11 +1,11 @@
-import seafoodNoodles from "./assets/seafood-noodles.svg";
-import mushroomNoodles from "./assets/mushroom-pasta.svg";
-import beefDumpling from "./assets/beef-dumpling.svg";
-import healthyNoodle from "./assets/healthy-peanut-noodle.svg";
-import omeletteRice from "./assets/healthy-noodle-omelet.svg";
-import spicyNoodle from "./assets/spicy-noodle-omelette.svg";
-import chickenNoodle from "./assets/Spicy-chicken-noodle.svg";
-import shrimpSoup from "./assets/shrimp-soup.svg";
+import seafoodNoodles from "./assets/seafood-noodles.png";
+import mushroomNoodles from "./assets/mushroom-pasta.png";
+import beefDumpling from "./assets/beef-dumpling.png";
+import healthyNoodle from "./assets/healthy-peanut-noodle.png";
+import omeletteRice from "./assets/fried-rice-omelette.png";
+import spicyNoodle from "./assets/spicy-noodle-omelette.png";
+import chickenNoodle from "./assets/sgpicy-chicken-noodle.png";
+import shrimpSoup from "./assets/shrimp-soup.png";
 
 const data = [
 	{
@@ -50,7 +50,7 @@ const data = [
 		price: 3.49,
 		image: omeletteRice,
 		description: "fried rice with egg omelette",
-		category: ["hot dishes, appetizer", "grill"],
+		category: ["hot dishes", "appetizer", "grill"],
 		availability: 20,
 	},
 	{
