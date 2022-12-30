@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Barlow-SemiBold;
+  font-family: Barlow-Regular;
+  src: url(./fonts/Barlow-SemiBold.ttf) format("truetype");
+  src: url(./fonts/Barlow-Regular.ttf) format("truetype");
+}
+
 .item-container {
   background-color: #1f1d2b;
   border-radius: 16px;
@@ -20,10 +27,12 @@
   flex-wrap: wrap;
   margin-top: -65px;
   max-width: 170px;
+  font-family: Barlow-Regular;
 }
 
 .food-title {
   padding-top: 16px;
+  padding-bottom: 8px;
   margin-left: -5%;
   margin-right: 10%;
   font-size: 16px;

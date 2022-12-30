@@ -8,7 +8,9 @@ const MenuItem = (props) => {
         <p className="food-title">{props.title}</p>
         <div className="food-price-availability-wrapper">
           <p className="food-price">$ {props.price}</p>
-          <p className="food-availability">{props.availability}</p>
+          <p className="food-availability">
+            {props.availability} bowls available
+          </p>
         </div>
       </div>
     </div>
