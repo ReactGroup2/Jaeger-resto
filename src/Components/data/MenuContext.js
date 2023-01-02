@@ -6,7 +6,7 @@ import omeletteRice from "./assets/fried-rice-omelette.png";
 import spicyNoodle from "./assets/spicy-noodle-omelette.png";
 import chickenNoodle from "./assets/spicy-chicken-noodle.png";
 import shrimpSoup from "./assets/shrimp-soup.png";
-import { useState, useContext, createContext } from "react";
+import { useState, createContext } from "react";
 
 export const MenuContext = createContext();
 

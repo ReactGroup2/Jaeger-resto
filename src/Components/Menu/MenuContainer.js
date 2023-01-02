@@ -3,7 +3,7 @@ import "./menu-container.css";
 import { MenuContext } from "../data/MenuContext";
 import MenuItem from "./MenuItem";
 
-const MenuContainer = () => {
+const MenuContainer = ({onClick}) => {
 	const [menu] = useContext(MenuContext);
 	return (
 		<div className="menu-wrapper">
@@ -11,6 +11,7 @@ const MenuContainer = () => {
 			<div className="menu-items-wrapper">
 				{menu.map((item) => (
 					<MenuItem
+					onClick={()=>onClick(item)}
 						key={item.id}
 						imgSrc={item.image}
 						title={item.title}
