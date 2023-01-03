@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: Barlow-Medium;
+	src: url(../styles/fonts/Barlow-Medium.ttf);
+}
+
 .invisble {
 	display: none;
 }
@@ -15,11 +20,13 @@
 .h2 {
 	color: white;
 	font-family: Barlow-Regular;
+	padding: 1.5rem;
 }
 
 .options-buttons__wrapper {
 	display: flex;
 	flex-direction: row;
+	padding: 1rem;
 }
 
 .cart-details-titles__wrapper {
@@ -28,6 +35,7 @@
 	justify-content: flex-end;
 	color: #fafafa;
 	font-size: 1.2rem;
+	font-family: Barlow-SemiBold;
 	text-align: center;
 	padding: 2rem;
 	border-bottom: 1px solid rgb(57, 60, 73);
@@ -42,8 +50,9 @@
 }
 
 .orders {
-	padding: 200px 0;
+	padding: 10rem 1rem;
 	border-bottom: 1px solid rgb(57, 60, 73);
+	font-family: Barlow-SemiBold;
 	color: white;
 }
 
@@ -51,8 +60,19 @@
 	display: flex;
 	flex-direction: row;
 	color: #fafafa;
+	padding: 1.5rem;
+}
+
+.left {
+	font-family: Barlow-Regular;
+	font-size: 1.1rem;
+	color: #abbbc2;
+	line-height: 140%;
 }
 
 .right {
+	font-family: Barlow-Medium;
 	margin-left: auto;
+	line-height: 140%;
+	color: #ffffff;
 }
