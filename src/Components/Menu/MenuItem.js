@@ -10,7 +10,8 @@ const MenuItem = (props) => {
 				<div className="food-price-availability-wrapper">
 					<p className="food-price">$ {props.price}</p>
 					<p className="food-availability">
-						{props.availability} bowls available
+					{!props.availability ? "Out of Stock" : `${props.availability} bowls available`}
+						
 					</p>
 				</div>
 			</div>

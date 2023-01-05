@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Barlow-Medium;
+  src: url(../styles/fonts/Barlow-Medium.ttf);
+}
+
+.invisble {
+  display: none;
+}
+
+.wrapper {
+  background-color: #1f1d2b;
+  width: 409px;
+  height: 834px;
+}
+
+.h2 {
+  color: white;
+  font-family: Barlow-Regular;
+  padding: 1.5rem;
+}
+
+.options-buttons__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.cart-details-titles__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #fafafa;
+  font-size: 1.2rem;
+  font-family: Barlow-SemiBold;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 1px solid rgb(57, 60, 73);
+}
+
+.cart-details-titles__1 {
+  margin-right: auto;
+}
+
+.cart-details-titles__2 {
+  margin-right: 10%;
+}
+
+.orders {
+  
+  border-bottom: 1px solid rgb(57, 60, 73);
+  font-family: Barlow-SemiBold;
+  color: white;
+ 
+}
+
+.bottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  color: #fafafa;
+  padding: 1.5rem;
+}
+
+.left {
+  font-family: Barlow-Regular;
+  font-size: 1.1rem;
+  color: #abbbc2;
+  line-height: 140%;
+}
+
+.right {
+  font-family: Barlow-Medium;
+  margin-left: auto;
+  line-height: 140%;
+  color: #ffffff;
+}
+.qty input {
+  width: 40px;
+  height: 40px;
+  transform: translateX(25px);
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2d303e;
+  border: 1px solid #393c49;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.single-item-total {
+  width: 43px;
+  height: 22px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: right;
+  color: #ffffff;
+}
+
+.delete-icon {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid #ff7ca3;
+  padding: 14px;
+  border-radius: 8px;
+  justify-content: center;
+   margin-bottom: 10px;
+}
+
+.delete-icon>*{
+	color: #ff7ca3;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.el{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row-reverse;
+margin-bottom: 10px;
+}
+
+.el input{
+	width: 293px;
+	height: 48px;
+	background: #2D303E;
+
+border: 1px solid #393C49;
+border-radius: 8px;
+
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #889898;
+}
+
+.el input::placeholder{
+padding-left: 20px;
+}
