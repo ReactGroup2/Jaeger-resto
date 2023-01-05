@@ -7,8 +7,9 @@
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
-	padding: 1rem;
+	/* padding: 1rem; */
 	gap: 2rem;
+	border-bottom: 2px solid rgb(70, 69, 69);
 }
 
 .options li {
@@ -17,8 +18,11 @@
 	font-weight: bold;
 	cursor: pointer;
 	padding: 1rem;
+	font-family: Barlow-SemiBold;
 }
 
 .options li:hover {
 	color: #ea7c69;
+	border-bottom: 2px solid #ea7c69;
 }
+
