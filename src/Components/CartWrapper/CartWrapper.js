@@ -7,9 +7,9 @@ const CartWrapper = () => {
   return (
     <div>
       {/* The button to toggle the CartWrapper */}
-      {/*       <button onClick={() => setIsCartWrapperOpen(!isCartWrapperOpen)}>
+      <button onClick={() => setIsCartWrapperOpen(!isCartWrapperOpen)}>
         Toggle CartWrapper
-      </button> */}
+      </button>
       {/* The CartWrapper itself */}
       {isCartWrapperOpen && (
         <div className={`${classes.wrapper}`}>
