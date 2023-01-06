@@ -6,7 +6,7 @@ import { useState, useContext } from "react";
 import Data from "../data/Data";
 
 const Header = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const [menu, setMenu] = useContext(MenuContext);
   const [data, setData] = useState(Data);
   const d = new Date();
@@ -20,17 +20,20 @@ const Header = () => {
     "Saturday",
   ];
 
-  const options = { year: "numeric", month: "short", day: "numeric" };
+  const options = { day: "numeric", month: "short", year: "numeric" };
   const date = d.toLocaleDateString("se-SE", options);
-
 
   const handleSearch = (e) => {
     e.preventDefault();
-    
+
     if (search) {
-      setMenu(data.filter((item) => item.title.toLowerCase().includes(search.toLowerCase())));
-      }
-      setSearch('');
+      setMenu(
+        data.filter((item) =>
+          item.title.toLowerCase().includes(search.toLowerCase())
+        )
+      );
+    }
+    setSearch("");
   };
 
   return (
@@ -56,7 +59,9 @@ const Header = () => {
         </form>
       </div>
       <Navbar />
-      {!menu.length&& <h1 className={classes['no-result']}>No Results Found</h1>}
+      {!menu.length && (
+        <h1 className={classes["no-result"]}>No Results Found</h1>
+      )}
     </div>
   );
 };

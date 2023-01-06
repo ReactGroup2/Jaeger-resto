@@ -1,15 +1,18 @@
+import { findByLabelText } from "@testing-library/react";
 import React from "react";
-import { MenuProvider } from "./data/MenuContext";
+import { MenuContext, MenuProvider } from "./data/MenuContext";
 import Header from "./Header/Header";
 import MenuContainer from "./Menu/MenuContainer";
 
 const Home = () => {
-	return (
-		<MenuProvider>
-			<Header />
-			<MenuContainer />
-		</MenuProvider>
-	);
+  return (
+    <div>
+      <MenuProvider>
+        <Header />
+        <MenuContainer />
+      </MenuProvider>
+    </div>
+  );
 };
 
 export default Home;
