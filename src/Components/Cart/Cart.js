@@ -4,6 +4,7 @@ import { CartContext } from "../data/CartContext";
 import CartItem from "./CartItem";
 import classes from "./cart-wrapper.module.css";
 import Button from "../Button/Button";
+import {FaRegWindowClose} from 'react-icons/fa'
 const Cart = () => {
   const {
     state: { cart },
@@ -15,18 +16,15 @@ const Cart = () => {
   useEffect(()=>{
 setTotal(cart.reduce((acc,curr)=>acc + +(curr.price*curr.qty),0));
 
-
 },[cart])
   const handleClose = () => setShow(false);
   return (
     <>
-      <Offcanvas show={show} onHide={handleClose} placement="end" className='w-40'>
       
-      
-        <div className={`${classes.wrapper}`} >
-        <Offcanvas.Header closeButton closeVariant="white" >
+        {show &&
+        (<div className={classes.wrapper}>
+          <FaRegWindowClose  className={classes['close-icon'] } onClick={handleClose}/>
           <h2 className={classes.h2}>Order</h2>
-        </Offcanvas.Header>
           <div className={classes["options-buttons__wrapper"]}>
             <Button className="button__main" text="Dine In" />
             <Button className="button__secondary_options" text="To Go" />
@@ -38,13 +36,11 @@ setTotal(cart.reduce((acc,curr)=>acc + +(curr.price*curr.qty),0));
             <h3 className={classes["cart-details-titles__3"]}>Price</h3>
           </div>
           <div className={classes.orders}>
-            <Offcanvas.Body>
               <Stack gap={3}>
                 {cart.map((item) => (
                   <CartItem key={item.id} {...item} dispatch={dispatch} />
                 ))}
               </Stack>
-            </Offcanvas.Body>
           </div>
           <div className={classes.bottom__wrapper}>
             <p className={classes.left}>Discount</p>
@@ -56,7 +52,7 @@ setTotal(cart.reduce((acc,curr)=>acc + +(curr.price*curr.qty),0));
           </div>
           <Button text="Continue to payment" className="button__main" />
         </div>
-      </Offcanvas>
+        )}
     </>
   );
 };

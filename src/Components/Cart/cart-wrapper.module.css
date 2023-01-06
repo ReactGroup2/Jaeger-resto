@@ -15,8 +15,13 @@
 
 .wrapper {
   background-color: #1f1d2b;
-  width: 409px;
-  height: 834px;
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 325px;
+  height: 100vh;
+  animation: slideInFromRight 0.5s ease-in;
+  border-radius: 1rem;
 }
 
 .h2 {
@@ -56,6 +61,8 @@
   border-bottom: 1px solid rgb(57, 60, 73);
   font-family: Barlow-SemiBold;
   color: white;
+  padding: 200px 0;
+
  
 }
 
@@ -64,6 +71,11 @@
   flex-direction: row;
   color: #fafafa;
   padding: 1.5rem;
+}
+
+
+.right {
+  margin-left: auto;
 }
 
 .left {
@@ -150,4 +162,24 @@ color: #889898;
 
 .el input::placeholder{
 padding-left: 20px;
+}
+
+.close-icon{
+color: #fafafa;
+font-size: 2rem;
+position: fixed;
+right:0;
+top:1rem;
+cursor: pointer;
+
+}
+
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

@@ -22,7 +22,7 @@ setModalIsOpen(false);
 			<Header />
 			<MenuContainer onClick={showModal} />
 			{modalIsOpen && <Modal item={item} onClose={closeModal}/>}
-			<Cart/>
+			 <Cart/> 
 		</MenuProvider>
 	);
 };
