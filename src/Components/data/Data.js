@@ -16,6 +16,7 @@ const Data = [
 		description: "good noodles",
 		category: "Hot Dishes",
 		availability: 20,
+		
 	},
 	{
 		id: 2,

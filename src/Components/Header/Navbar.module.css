@@ -1,18 +1,20 @@
 .navbar {
-	width: 100%;
+	width: 75%;
 	height: 20rem;
-}
-.options {
+  }
+  .options {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
+
 	/* padding: 1rem; */
 	gap: 2rem;
 	border-bottom: 2px solid rgb(70, 69, 69);
 }
 
 .options li {
+	gap: 2rem;
 	color: #fff;
 	font-size: 1.2rem;
 	font-weight: bold;
@@ -26,3 +28,6 @@
 	border-bottom: 2px solid #ea7c69;
 }
 
+ .options li:hover {
+	color: #EA7C69;
+  }
