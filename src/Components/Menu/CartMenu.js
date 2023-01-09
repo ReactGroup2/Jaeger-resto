@@ -13,7 +13,7 @@ const CartMenu = () => {
 
   return (
     <Dropdown className="d-inline mx-2 my-3 dropdown">
-    <Dropdown.Toggle id="dropdown-autoclose-false" variant='secondary'>
+    <Dropdown.Toggle id="dropdown-autoclose-true" variant='secondary'>
       <AiOutlineShoppingCart />
       <Badge bg="secondary">{cart.length}</Badge>
     </Dropdown.Toggle>
@@ -36,9 +36,11 @@ const CartMenu = () => {
               </div>
             </span>
           ))}
+          <Dropdown.Item >
           <Button style={{ width: "95%", margin: "0 10px" }} onClick={handleShow}>
             Go To Cart
           </Button>
+          </Dropdown.Item>
         </>
       ) : (
         <span style={{ padding: 10 }}>Cart Is Empty</span>
