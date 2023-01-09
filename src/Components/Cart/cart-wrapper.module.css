@@ -93,10 +93,33 @@ overflow: scroll;
   line-height: 140%;
   color: #ffffff;
 }
+
+.header{
+display: flex;
+justify-content:center;
+align-items: center;
+width: 350px;
+}
+
+.header .title{
+display: inline-block;
+width: 13rem ;
+font-size: 9px;
+font-weight: 500;
+white-space: nowrap; 
+overflow: hidden;
+text-overflow: ellipsis ;
+padding: 0 1rem;
+
+
+}
+
+
+
 .qty input {
+  transform: translateY(1rem);
   width: 40px;
   height: 40px;
-  transform: translateX(25px);
   font-family: "Barlow";
   font-style: normal;
   font-weight: 500;
@@ -106,19 +129,23 @@ overflow: scroll;
   border: 1px solid #393c49;
   text-align: center;
   padding-left: 15px;
+  border-radius: .5rem;
 }
 
 .single-item-total {
-  width: 43px;
-  height: 22px;
+  width: 4rem;
+  height: 2rem;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
-  text-align: right;
+  text-align: center;
   color: #ffffff;
-}
+  margin-left: 2rem;
+   padding: 0 1.5rem 0 0;
+  margin-right: .5rem; 
+} 
 
 .delete-icon {
   width: 48px;
@@ -128,7 +155,7 @@ overflow: scroll;
   padding: 14px;
   border-radius: 8px;
   justify-content: center;
-   margin-bottom: 10px;
+   margin: 10px 10px;
 }
 
 .delete-icon>*{

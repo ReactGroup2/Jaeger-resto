@@ -8,7 +8,9 @@ const CartItem = ({ image, title, price, qty, id }) => {
 
   return (
     <>
-    <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
+    <Stack direction="horizontal" gap={2}>
+    <div className={classes.header}>
+
       <img
         src={image}
         alt={title}
@@ -20,10 +22,10 @@ const CartItem = ({ image, title, price, qty, id }) => {
         }}
       />
 
-      <div className="me-auto">
         <div>
+          <span className={classes.title}>
           {title}
-
+          </span>
           <span className={classes.qty}>
             <input
               type="number"
