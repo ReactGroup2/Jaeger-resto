@@ -7,15 +7,27 @@
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
+
+	/* padding: 1rem; */
 	gap: 2rem;
-  }
-  .options li {
+	border-bottom: 2px solid rgb(70, 69, 69);
+}
+
+.options li {
+	gap: 2rem;
 	color: #fff;
 	font-size: 1.2rem;
 	font-weight: bold;
 	cursor: pointer;
-	padding-top: 2rem;
-  }
-  .options li:hover {
+	padding: 1rem;
+	font-family: Barlow-SemiBold;
+}
+
+.options li:hover {
+	color: #ea7c69;
+	border-bottom: 2px solid #ea7c69;
+}
+
+ .options li:hover {
 	color: #EA7C69;
   }
