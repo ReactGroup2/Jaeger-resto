@@ -3,6 +3,7 @@
 	src: url(../styles/fonts/Barlow-SemiBold.ttf) format("truetype");
 }
 
+
 .menu-wrapper {
 	background-color: #252730;
 	max-width: 100%;
@@ -24,6 +25,36 @@
 	/* flex-wrap: wrap; */
 	color: white;
 }
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	width: 100%;
+	height: 10px;
+}
+.cartitem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 20px;
+	margin-bottom: 20px;
+  }
+  
+  .cartItemImg {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+  }
+  
+  .cartItemDetail {
+	display: flex;
+	flex: 1;
+	padding: 0 20px;
+	flex-direction: column;
+  }
+
 
 /* mobilscreen
 @media only screen and (max-width: 400px) {

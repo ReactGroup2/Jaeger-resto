@@ -1,10 +1,12 @@
 import Home from "./components/Home";
+import { CartProvider } from "./components/data/CartContext";
+import Cart from "./components/Cart/Cart";
 
 function App() {
 	return (
-		<div className="App">
+		<CartProvider>
 			<Home />
-		</div>
+		</CartProvider>
 	);
 }
 
