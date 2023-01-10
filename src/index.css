@@ -1,19 +1,16 @@
-*{
-margin:0;
-padding: 0;
-box-sizing: border-box;
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-html{
-font-size: 62.5%;
+html {
+	font-size: 16px;
 }
 
-body{
-background-color: #393C49;
-display: flex;
-justify-content: center;
-min-height: 100vh;
-
+body {
+	background-color: #252836;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
 }
-
