@@ -17,11 +17,14 @@ const Cart = () => {
     setTotal(cart.reduce((acc, curr) => acc + +(curr.price * curr.qty), 0));
   }, [cart]);
   const handleClose = () => setShow(false);
+
+  //intially show is undefined so we don't apply any animations when we first render the page
+  const wrapperClasses =
+    show === undefined ? "" : show ? classes.show : classes.hide;
+
   return (
     <>
-      <div
-        className={`${classes.wrapper} ${show ? classes.show : classes.hide}`}
-      >
+      <div className={`${classes.wrapper} ${wrapperClasses}`}>
         <FaRegWindowClose
           className={classes["close-icon"]}
           onClick={handleClose}
