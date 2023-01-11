@@ -17,7 +17,6 @@ export const CartProvider = (props) => {
       case "ADD_TO_CART":
         const exist = state.cart.find((x) => x.id === action.payload.id);
 
-        console.log(state.cart);
         if (exist) {
           return {
             ...state,
@@ -58,11 +57,13 @@ export const CartProvider = (props) => {
     cart: localData ? JSON.parse(localData) : [],
     items: Data,
   });
+  const [purchase, setPurchase] = useState(false);
+
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(state.cart));
   }, [state.cart]);
   return (
-    <CartContext.Provider value={{ state, dispatch, show, setShow }}>
+    <CartContext.Provider value={{ state, dispatch, show, setShow,purchase,setPurchase }}>
       {props.children}
     </CartContext.Provider>
   );

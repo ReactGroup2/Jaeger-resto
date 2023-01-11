@@ -4,6 +4,7 @@ import Cart from "./Components/Cart/Cart";
 
 function App() {
 	return (
+		
 		<CartProvider>
 			<Home />
 		</CartProvider>

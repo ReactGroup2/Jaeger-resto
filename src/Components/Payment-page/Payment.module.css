@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Barlow-Medium;
+  src: url(../styles/fonts/Barlow-Medium.ttf);
+}
+
+.invisble {
+  display: none;
+}
+
+.wrapper {
+  background-color: #1f1d2b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 325px;
+  height: 100vh;
+  animation: slideInFromRight 0.5s ease-in;
+  border-radius: 0.5rem;
+  border: 1px solid #393c49;
+  z-index: 1000;
+}
+
+.h2 {
+  color: white;
+  font-family: Barlow-Regular;
+  padding: 1.5rem;
+}
+
+.options-buttons__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 357px;
+  height: 120px;
+  border-bottom: 1px solid rgb(57, 60, 73);
+}
+
+.cart-details-titles__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #fafafa;
+  font-size: 1.2rem;
+  font-family: Barlow-SemiBold;
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 1px solid rgb(57, 60, 73);
+}
+
+.cart-details-titles__1 {
+  margin-right: auto;
+  padding-left: 1.5rem;
+}
+
+.cart-details-titles__2 {
+  margin-right: 10%;
+}
+
+.orders {
+  border-bottom: 1px solid rgb(57, 60, 73);
+  font-family: Barlow-SemiBold;
+  color: white;
+  padding: 1.5rem 0;
+  width: 357px;
+  height: 430px;
+}
+
+.bottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 25%;
+  
+}
+
+.left {
+  font-family: Barlow-Regular;
+  font-size: 1.1rem;
+  color: #abbbc2;
+  line-height: 140%;
+}
+
+.right {
+  font-family: Barlow-Medium;
+  margin-left: auto;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.header .title {
+  display: inline-block;
+  width: 13rem;
+  font-size: 9px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 1rem;
+}
+
+.button-header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Card Payment Option Style */
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 357px;
+  height: 200px;
+  gap: 2.5rem;
+}
+
+.form-control label {
+  display: block;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2rem;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.form-control input {
+  background: #2d303e;
+  border: 1px solid #393c49;
+  border-radius: 1rem;
+  width: 300px;
+  height: 30px;
+  padding: 1.5rem;
+  margin-left: 1rem;
+}
+
+.order-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.order-bottom input {
+  width: 130px;
+  height: 48px;
+  background: #2D303E;
+  border: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 1rem;
+  margin-right: .3rem;
+}
+.order-bottom label{
+    margin-bottom: 1rem;
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 1rem;
+  padding-top: .5rem;
+
+}
+
+.order-bottom select {
+  width: 130px;
+  height: 48px;
+  background-color: #1F1D2B; 
+  border-radius: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.paypal{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 300px;
+}
+.buttons{
+height: 25rem;
+width: 65%;
+overflow: scroll;
+margin-right: 1rem;
+}
+.buttons input{
+  color: #1F1D2B;
+}
+
+.swish-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  cursor: pointer;
+
+}
+
+.swish{
+width:15rem;
+height: 5rem;
+background-color: #f4f4f4;
+padding: 1.5rem;
+border-radius: .5rem;
+}
+
+.alert{
+margin-top: 1rem;
+animation: slideInFromTop .5s ease-in;
+font-size: 1.5rem;
+}
+.alert strong{
+color: orange;
+font-size: 2rem;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}

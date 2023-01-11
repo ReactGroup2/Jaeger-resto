@@ -24,6 +24,20 @@
   border-radius: .5rem;
 }
 
+
+
+.slide {
+  background-color: #1f1d2b;
+  position: absolute;
+  top:0;
+  right: 32.5rem;
+  width: 325px;
+  height: 100vh;
+  animation: slideIn 0.5s ease-in;
+  border-radius: .5rem;
+  z-index: 1000;
+}
+
 .h2 {
   color: white;
   font-family: Barlow-Regular;
@@ -205,6 +219,15 @@ cursor: pointer;
 
 
 @keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn{
   from {
     transform: translateX(100%);
   }

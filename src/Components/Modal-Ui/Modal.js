@@ -4,7 +4,7 @@ import { CartContext } from '../data/CartContext'
 import MenuItem from '../Menu/MenuItem'
 import classes from './Modal.module.css'
 
-const BackDrop=({onClose})=>{
+ export const BackDrop=({onClose})=>{
 
 
   return (
