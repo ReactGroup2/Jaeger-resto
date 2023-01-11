@@ -10,7 +10,7 @@ import Data from "./Data";
 export const CartContext = createContext();
 
 export const CartProvider = (props) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState();
 
   const cartReducer = (state, action) => {
     switch (action.type) {

@@ -1,21 +1,21 @@
 .navbar {
 	width: 75%;
-	height: 20rem;
-  }
-  .options {
+	margin-left: -2rem;
+	margin-top: 1rem;
+}
+.options {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
-	gap: 2rem;
-  }
-  .options li {
+}
+.options li {
 	color: #fff;
-	font-size: 1.2rem;
-	font-weight: bold;
+	font-size: 0.875rem;
+	font-family: Barlow-SemiBold;
 	cursor: pointer;
-	padding-top: 2rem;
-  }
-  .options li:hover {
-	color: #EA7C69;
-  }
+	border-bottom: 2px solid #252836;
+}
+.options li:hover {
+  color: #ea7c69;
+}

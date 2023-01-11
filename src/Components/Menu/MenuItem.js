@@ -1,17 +1,21 @@
-import "./menu-item.css";
+import classes from "./menuItem.module.css";
 
 const MenuItem = (props) => {
-	
 	return (
-		<div className="item-container" onClick={props.onClick}>
-			<img className="food-icon" src={props.imgSrc} alt={props.description} />
-			<div className="text-wrapper">
-				<p className="food-title">{props.title}</p>
-				<div className="food-price-availability-wrapper">
-					<p className="food-price">$ {props.price}</p>
-					<p className="food-availability">
-					{!props.availability ? "Out of Stock" : `${props.availability} bowls available`}
-						
+		<div className={classes["item-container"]} onClick={props.onClick}>
+			<img
+				className={classes["food-icon"]}
+				src={props.imgSrc}
+				alt={props.description}
+			/>
+			<div className={classes["text-wrapper"]}>
+				<p className={classes["food-title"]}>{props.title}</p>
+				<div className={classes["food-price-availability-wrapper"]}>
+					<p className={classes["food-price"]}>$ {props.price}</p>
+					<p className={classes["food-availability"]}>
+						{!props.availability
+							? "Out of Stock"
+							: `${props.availability} bowls available`}
 					</p>
 				</div>
 			</div>

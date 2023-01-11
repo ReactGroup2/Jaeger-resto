@@ -4,8 +4,8 @@ import { MenuContext } from "../data/MenuContext";
 import Data from "../data/Data";
 
 const Navbar = () => {
-  const [menu,setMenu] = useContext(MenuContext);
-  const [data] = useState(Data);
+	const [menu, setMenu] = useContext(MenuContext);
+	const [data] = useState(Data);
 
   const allCategories = ["All", ...new Set(data.map((item) => item.category))];
 
@@ -31,5 +31,7 @@ const Navbar = () => {
     </nav>
   );
 };
+
+
 
 export default Navbar;
