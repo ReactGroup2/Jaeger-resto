@@ -15,13 +15,23 @@
 
 .wrapper {
   background-color: #1f1d2b;
-  position: absolute;
-  top:0;
+  position: fixed;
+  top: 0;
   right: 0;
-  width: 325px;
+  width: 400px;
+  overflow: hidden;
+  z-index: 999;
   height: 100vh;
-  animation: slideInFromRight 0.5s ease-in;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+  transform: translateX(100%);
+}
+
+.show {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+.hide {
+  animation: slideOutToRight 0.5s forwards;
 }
 
 .h2 {
@@ -57,14 +67,12 @@
 }
 
 .orders {
-  
   border-bottom: 1px solid rgb(57, 60, 73);
   font-family: Barlow-SemiBold;
   color: white;
-  padding-top: .5rem;
-max-height: 35rem;
-overflow: scroll;
- 
+  padding-top: 0.5rem;
+  max-height: 35rem;
+  overflow: scroll;
 }
 
 .bottom__wrapper {
@@ -72,13 +80,10 @@ overflow: scroll;
   flex-direction: row;
   color: #fafafa;
   padding: 1.5rem;
-  
- /* width: 100%;
+
+  /* width: 100%;
  height: 3rem; */
 }
-
-
-
 
 .left {
   font-family: Barlow-Regular;
@@ -94,27 +99,23 @@ overflow: scroll;
   color: #ffffff;
 }
 
-.header{
-display: flex;
-justify-content:center;
-align-items: center;
-width: 350px;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
 }
 
-.header .title{
-display: inline-block;
-width: 13rem ;
-font-size: 9px;
-font-weight: 500;
-white-space: nowrap; 
-overflow: hidden;
-text-overflow: ellipsis ;
-padding: 0 1rem;
-
-
+.header .title {
+  display: inline-block;
+  width: 13rem;
+  font-size: 9px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 1rem;
 }
-
-
 
 .qty input {
   transform: translateY(1rem);
@@ -129,7 +130,7 @@ padding: 0 1rem;
   border: 1px solid #393c49;
   text-align: center;
   padding-left: 15px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .single-item-total {
@@ -143,9 +144,9 @@ padding: 0 1rem;
   text-align: center;
   color: #ffffff;
   margin-left: 2rem;
-   padding: 0 1.5rem 0 0;
-  margin-right: .5rem; 
-} 
+  padding: 0 1.5rem 0 0;
+  margin-right: 0.5rem;
+}
 
 .delete-icon {
   width: 48px;
@@ -155,60 +156,68 @@ padding: 0 1rem;
   padding: 14px;
   border-radius: 8px;
   justify-content: center;
-   margin: 10px 10px;
+  margin: 10px 10px;
 }
 
-.delete-icon>*{
-	color: #ff7ca3;
-	width: 20px;
-	height: 20px;
-	cursor: pointer;
+.delete-icon > * {
+  color: #ff7ca3;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
-.el{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: row-reverse;
-margin-bottom: 10px;
+.el {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
 }
 
-.el input{
-	width: 293px;
-	height: 48px;
-	background: #2D303E;
+.el input {
+  width: 293px;
+  height: 48px;
+  background: #2d303e;
 
-border: 1px solid #393C49;
-border-radius: 8px;
+  border: 1px solid #393c49;
+  border-radius: 8px;
 
-
-font-family: 'Barlow';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-color: #889898;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #889898;
 }
 
-.el input::placeholder{
-padding-left: 20px;
+.el input::placeholder {
+  padding-left: 20px;
 }
 
-.close-icon{
-color: #fafafa;
-font-size: 2rem;
-position: fixed;
-right:0;
-top:1rem;
-cursor: pointer;
-
+.close-icon {
+  color: #fafafa;
+  font-size: 2rem;
+  position: fixed;
+  right: 0;
+  top: 1rem;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 5px;
 }
-
 
 @keyframes slideInFromRight {
   from {
     transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
