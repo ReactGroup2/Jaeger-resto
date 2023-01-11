@@ -28,8 +28,6 @@
 	font-style: normal;
 	font-size: 1.75rem;
 	line-height: 4rem;
-
-  .form {
 	color: #fafafa;
 }
 
@@ -62,6 +60,16 @@
 	border: 0;
 	cursor: pointer;
 	color: #d3dce0;
+}
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+form input:-webkit-autofill:focus,
+.form input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px #555555 inset !important;
+	outline: none;
+	border: 0;
+	color: #ffffff;
 }
 
 .form input:focus {
