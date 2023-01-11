@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Offcanvas, Stack } from "react-bootstrap";
 import { CartContext } from "../data/CartContext";
 import CartItem from "./CartItem";
-import classes from "./cart-wrapper.module.css";
+import classes from "./cart.module.css";
 import Button from "../Button/Button";
 import { FaRegWindowClose } from "react-icons/fa";
 const Cart = () => {

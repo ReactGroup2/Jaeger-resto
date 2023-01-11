@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
+import classes from "./menuContainer.module.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Badge, Button } from "react-bootstrap";
 import { CartContext } from "../data/CartContext";
@@ -53,5 +54,6 @@ const CartMenu = () => {
     </Dropdown>
   );
 };
+
 
 export default CartMenu;
