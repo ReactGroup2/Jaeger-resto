@@ -11,6 +11,7 @@
 	align-items: flex-start;
 	margin-bottom: 2rem;
 	border-bottom: 1px solid #393c49;
+	color: white;
 }
 
 .title-el {
@@ -28,6 +29,8 @@
 	font-style: normal;
 	font-size: 1.75rem;
 	line-height: 4rem;
+}
+.form {
 	color: #fafafa;
 }
 
@@ -60,6 +63,7 @@
 	border: 0;
 	cursor: pointer;
 	color: #d3dce0;
+	margin-left: -8px;
 }
 
 .form input:-webkit-autofill,
