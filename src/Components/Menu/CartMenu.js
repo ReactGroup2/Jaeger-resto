@@ -20,7 +20,15 @@ const CartMenu = () => {
         <AiOutlineShoppingCart />
         <Badge bg="secondary">{cart.length}</Badge>
       </Dropdown.Toggle>
-      <Dropdown.Menu style={{ minWidth: 100, textAlign: "center" }}>
+      <Dropdown.Menu
+        className="cart-dropdown-menu"
+        style={{
+          minWidth: 100,
+          textAlign: "center",
+          padding: "20px",
+          marginLeft: "-60px",
+        }}
+      >
         {cart.length > 0 ? (
           <>
             {cart.map((item) => (
@@ -54,6 +62,5 @@ const CartMenu = () => {
     </Dropdown>
   );
 };
-
 
 export default CartMenu;
