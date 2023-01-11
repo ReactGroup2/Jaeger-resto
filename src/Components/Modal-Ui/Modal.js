@@ -1,18 +1,19 @@
-import React, { useContext } from "react";
-import ReactDOM from "react-dom";
-import { CartContext } from "../data/CartContext";
-import MenuItem from "../Menu/MenuItem";
-import classes from "./Modal.module.css";
+import React, { useContext } from 'react'
+import  ReactDOM  from 'react-dom'
+import { CartContext } from '../data/CartContext'
+import MenuItem from '../Menu/MenuItem'
+import classes from './Modal.module.css'
 
-const BackDrop = ({ onClose }) => {
-  return <div className={classes.backdrop} onClick={onClose}></div>;
-};
+ export const BackDrop=({onClose})=>{
 
-function Overlay({ item, onClose }) {
-  const {
-    state: { cart },
-    dispatch,
-  } = useContext(CartContext);
+
+  return (
+    <div className={classes.backdrop} onClick={onClose}></div>
+    )
+}
+
+function Overlay({item,onClose}) {
+  const {state:{cart},dispatch}=useContext(CartContext)
   return (
     <div className={classes.modal}>
       {item.title}

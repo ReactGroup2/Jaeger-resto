@@ -3,11 +3,11 @@ import { CartProvider } from "./Components/data/CartContext";
 import Cart from "./Components/Cart/Cart";
 
 function App() {
-  return (
-    <CartProvider>
-      <Home />
-    </CartProvider>
-  );
+	return (
+		<CartProvider>
+			<Home />
+		</CartProvider>
+	);
 }
 
 export default App;
