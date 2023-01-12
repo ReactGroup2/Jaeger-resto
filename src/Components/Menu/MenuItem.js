@@ -12,11 +12,11 @@ const MenuItem = (props) => {
 				<p className={classes["food-title"]}>{props.title}</p>
 				<div className={classes["food-price-availability-wrapper"]}>
 					<p className={classes["food-price"]}>$ {props.price}</p>
-					<p className={classes["food-availability"]}>
+					{/* <p className={classes["food-availability"]}>
 						{!props.availability
 							? "Out of Stock"
 							: `${props.availability} bowls available`}
-					</p>
+					</p> */}
 				</div>
 			</div>
 		</div>
