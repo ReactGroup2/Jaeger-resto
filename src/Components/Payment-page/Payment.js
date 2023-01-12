@@ -33,14 +33,16 @@ const Payment = ({ order, onClose }) => {
 		<div className={classes.wrapper}>
 			<div className={classes["options-buttons__wrapper"]}>
 				<h2 className={classes.h2}>Payment</h2>
-				<div className="text-muted">3 payment method available</div>
+				<div className={`text-muted ${classes.subheading}`}>
+					3 payment method available
+				</div>
 			</div>
 
 			<div className={classes.orders}>
 				<h3 className={classes["cart-details-titles__1"]}>Payment Method</h3>
 				<div className={classes["button-header-container"]}>
 					<Button
-						text="Credit Card"
+						text="Card"
 						className="button__checkout_options"
 						onClick={() => {
 							setPaypal(false);
@@ -49,7 +51,7 @@ const Payment = ({ order, onClose }) => {
 						}}
 					/>
 					<Button
-						text="Paypal "
+						text="Paypal"
 						className="button__checkout_options"
 						onClick={() => {
 							setPaypal(true);
@@ -77,7 +79,9 @@ const Payment = ({ order, onClose }) => {
 				{swish && <Swish />}
 			</div>
 
-			<div className={classes["order-bottom"]}>
+			<div
+				className={`${classes["order-bottom"]} ${classes["dining-options"]}`}
+			>
 				<div>
 					<label>Order Type</label>
 					<select>
@@ -108,7 +112,7 @@ const Payment = ({ order, onClose }) => {
 				</div>
 			</div>
 			<div className={classes["bottom__wrapper"]}>
-				<Button text="Cancel" className="button__main" onClick={onClose} />
+				<Button text="Cancel" className="button__secondary" onClick={onClose} />
 				<Button
 					text="Confirm Payment"
 					className="button__main"

@@ -15,12 +15,12 @@
 
 .wrapper {
 	background-color: #1f1d2b;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	width: 325px;
 	height: 100vh;
-	animation: slideInFromRight 0.5s ease-in;
+	animation: slideInFromRight 0.4s ease-in;
 	border-radius: 0.5rem;
 	border: 1px solid #393c49;
 	z-index: 1000;
@@ -29,6 +29,7 @@
 .h2 {
 	color: white;
 	font-family: Barlow-Regular;
+	font-size: 1.5rem;
 	padding: 1rem;
 }
 
@@ -55,20 +56,17 @@
 
 .cart-details-titles__1 {
 	margin-right: auto;
+	font-size: 1rem;
 	padding-left: 1.5rem;
 }
 
-.cart-details-titles__2 {
-	margin-right: 10%;
-}
-
 .orders {
-	border-bottom: 1px solid rgb(57, 60, 73);
+	/* border-bottom: 1px solid rgb(57, 60, 73); */
 	font-family: Barlow-SemiBold;
 	color: white;
-	padding: 1.5rem 0;
-	width: 357px;
-	height: 430px;
+	padding: 1rem 0;
+	/* width: 357px;
+	height: 430px; */
 }
 
 .bottom__wrapper {
@@ -78,7 +76,9 @@
 	justify-content: center;
 	position: absolute;
 	bottom: 1rem;
-	left: 25%;
+	border-top: 1px solid rgb(57, 60, 73);
+	width: 100%;
+	/* left: 25%; */
 }
 
 .left {
@@ -136,35 +136,36 @@
 	flex-direction: column;
 	width: 357px;
 	height: 200px;
-	gap: 2.5rem;
+	/* gap: 0.5rem; */
 }
 
 .form-control label {
 	display: block;
-	font-family: "Barlow";
+	font-family: Barlow-Regular;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 15px;
-	line-height: 2rem;
+	/* line-height: 2rem; */
 	color: #ffffff;
-	padding: 1rem;
+	padding: 0.5rem;
 }
 
 .form-control input {
 	background: #2d303e;
 	border: 1px solid #393c49;
+	font-family: Barlow-Regular;
 	border-radius: 1rem;
 	width: 300px;
 	height: 30px;
 	padding: 1.5rem;
-	margin-left: 1rem;
+	margin-left: 0.5rem;
 }
 
 .order-bottom {
 	display: flex;
 	flex-direction: row;
-	gap: 1rem;
 }
+
 .order-bottom input {
 	width: 130px;
 	height: 48px;
@@ -176,17 +177,17 @@
 	margin-right: 0.3rem;
 }
 .order-bottom label {
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 	color: #fafafa;
-	font-size: 1.5rem;
-	font-family: "Barlow";
+	font-size: 1rem;
+	font-family: Barlow-Regular;
 	font-style: normal;
 	font-weight: 500;
-	margin-left: 1rem;
+	/* margin-left: 0.5rem; */
 	padding-top: 0.5rem;
 }
 
-.order-bottom select {
+/* .order-bottom select {
 	width: 130px;
 	height: 48px;
 	background-color: #1f1d2b;
@@ -194,6 +195,35 @@
 	color: #fff;
 	text-align: center;
 	margin-left: 1rem;
+} */
+
+.dining-options {
+	display: flex;
+	justify-content: center;
+}
+
+.dining-options select {
+	width: 130px;
+	height: 48px;
+	background-color: #1f1d2b;
+	border-radius: 1rem;
+	color: #fff;
+	text-align: center;
+	margin-left: 1rem;
+}
+
+.dining-options label {
+	/* margin-bottom: 1rem; */
+	color: #fafafa;
+	font-size: 1rem;
+	font-family: Barlow-Regular;
+	font-style: normal;
+	font-weight: 500;
+	/* margin-left: 0.5rem; */
+	padding-top: 0.5rem;
+	margin-left: -10%;
+	margin-top: 4rem;
+	padding: 1rem;
 }
 
 .paypal {
@@ -231,10 +261,14 @@
 .alert {
 	margin-top: 1rem;
 	animation: slideInFromTop 0.5s ease-in;
+	background-color: #2d303e;
 	font-size: 1.5rem;
+	font-family: Barlow-Regular;
+	color: #fafafa;
 }
 .alert strong {
-	color: orange;
+	color: #ea7c69;
+	font-family: Barlow-SemiBold;
 	font-size: 2rem;
 }
 
