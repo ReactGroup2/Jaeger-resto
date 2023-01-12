@@ -8,44 +8,48 @@ const CartItem = ({ image, title, price, qty, id }) => {
 
 	return (
 		<>
-			<Stack direction="horizontal" gap={2}>
+			<Stack direction="vertical" gap={2}>
 				<div className={classes.header}>
 					<img
 						src={image}
 						alt={title}
 						style={{
-							width: "65px",
+							width: "30px",
 							height: "30px",
 							borderRadius: "30px",
-							perspective: "1000px",
+							// perspective: "1000px",
+							// marginLeft: "-1rem",
 						}}
 					/>
 
-					<div>
+					<div className={classes["title-qty-stack"]}>
 						<span className={classes.title}>{title}</span>
-						<span className={classes.qty}>
-							<input
-								type="number"
-								as="select"
-								min={1}
-								max={5}
-								value={qty}
-								onChange={(e) =>
-									dispatch({
-										type: "CHANGE_CART_QTY",
-										payload: {
-											id: id,
-											qty: e.target.value,
-										},
-									})
-								}
-							/>
-						</span>
-						<div className="text-muted">${price.toFixed(2)} </div>
+						<span className={classes.qty}></span>
+
+						<div className={`text-muted ${classes["single-item-price"]}`}>
+							${price.toFixed(2)}{" "}
+						</div>
 					</div>
-				</div>
-				<div className={classes["single-item-total"]}>
-					${+(price * qty).toFixed(2)}{" "}
+					<input
+						type="number"
+						as="select"
+						className={classes["qty-input"]}
+						min={1}
+						max={5}
+						value={qty}
+						onChange={(e) =>
+							dispatch({
+								type: "CHANGE_CART_QTY",
+								payload: {
+									id: id,
+									qty: e.target.value,
+								},
+							})
+						}
+					/>
+					<div className={classes["single-item-total"]}>
+						${+(price * qty).toFixed(2)}{" "}
+					</div>
 				</div>
 			</Stack>
 			<Stack>

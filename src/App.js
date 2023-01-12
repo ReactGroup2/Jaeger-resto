@@ -1,13 +1,14 @@
-import Home from "./Components/Home";
-import { CartProvider } from "./Components/data/CartContext";
-import Cart from "./Components/Cart/Cart";
+import Home from "./components/Home";
+import { CartProvider } from "./components/data/CartContext";
+import Cart from "./components/Cart/Cart";
 
 function App() {
-  return (
-    <CartProvider>
-      <Home />
-    </CartProvider>
-  );
+	return (
+		<CartProvider>
+			<Home />
+			<Cart />
+		</CartProvider>
+	);
 }
 
 export default App;
