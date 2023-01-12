@@ -80,19 +80,21 @@ const Cart = () => {
 							))}
 						</Stack>
 					</div>
-					<div className={classes.bottom__wrapper}>
-						<p className={classes.left}>Discount</p>
-						<h2 className={classes.right}>$0.00</h2>
+					<div className={classes["cart-bottom__container"]}>
+						<div className={classes.bottom__wrapper}>
+							<p className={classes.left}>Discount</p>
+							<h2 className={classes.right}>$0.00</h2>
+						</div>
+						<div className={classes.bottom__wrapper}>
+							<p className={classes.left}>Total</p>
+							<h2 className={classes.right}>${total.toFixed(2)}</h2>
+						</div>
+						<Button
+							text="Continue to payment"
+							className="button__main"
+							onClick={checkoutHandler}
+						/>
 					</div>
-					<div className={classes.bottom__wrapper}>
-						<p className={classes.left}>Total</p>
-						<h2 className={classes.right}>${total.toFixed(2)}</h2>
-					</div>
-					<Button
-						text="Continue to payment"
-						className="button__main"
-						onClick={checkoutHandler}
-					/>
 				</div>
 			</Slide>
 			{checkout && (

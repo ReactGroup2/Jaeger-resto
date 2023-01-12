@@ -50,7 +50,6 @@
 	font-size: 1.2rem;
 	font-family: Barlow-SemiBold;
 	text-align: center;
-	padding: 2rem;
 	border-bottom: 1px solid rgb(57, 60, 73);
 }
 
@@ -61,12 +60,9 @@
 }
 
 .orders {
-	/* border-bottom: 1px solid rgb(57, 60, 73); */
 	font-family: Barlow-SemiBold;
 	color: white;
 	padding: 1rem 0;
-	/* width: 357px;
-	height: 430px; */
 }
 
 .bottom__wrapper {
@@ -78,7 +74,6 @@
 	bottom: 1rem;
 	border-top: 1px solid rgb(57, 60, 73);
 	width: 100%;
-	/* left: 25%; */
 }
 
 .left {
@@ -117,7 +112,6 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin-top: 2rem;
 }
 
 @keyframes slideInFromRight {
@@ -136,7 +130,6 @@
 	flex-direction: column;
 	width: 357px;
 	height: 200px;
-	/* gap: 0.5rem; */
 }
 
 .form-control label {
@@ -145,7 +138,6 @@
 	font-style: normal;
 	font-weight: 500;
 	font-size: 15px;
-	/* line-height: 2rem; */
 	color: #ffffff;
 	padding: 0.5rem;
 }
@@ -177,25 +169,13 @@
 	margin-right: 0.3rem;
 }
 .order-bottom label {
-	/* margin-bottom: 1rem; */
 	color: #fafafa;
 	font-size: 1rem;
 	font-family: Barlow-Regular;
 	font-style: normal;
 	font-weight: 500;
-	/* margin-left: 0.5rem; */
-	padding-top: 0.5rem;
+	padding: 0.5rem;
 }
-
-/* .order-bottom select {
-	width: 130px;
-	height: 48px;
-	background-color: #1f1d2b;
-	border-radius: 1rem;
-	color: #fff;
-	text-align: center;
-	margin-left: 1rem;
-} */
 
 .dining-options {
 	display: flex;
@@ -212,31 +192,23 @@
 	margin-left: 1rem;
 }
 
-.dining-options label {
-	/* margin-bottom: 1rem; */
+.order-type__label {
+	margin-top: 4rem;
 	color: #fafafa;
 	font-size: 1rem;
 	font-family: Barlow-Regular;
 	font-style: normal;
-	font-weight: 500;
-	/* margin-left: 0.5rem; */
-	padding-top: 0.5rem;
-	margin-left: -10%;
-	margin-top: 4rem;
-	padding: 1rem;
+	padding-left: 1rem;
 }
 
 .paypal {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 300px;
 }
 .buttons {
-	height: 25rem;
-	width: 65%;
-	overflow: scroll;
-	margin-right: 1rem;
+	overflow: hide;
+	padding-top: 20%;
 }
 .buttons input {
 	color: #1f1d2b;
@@ -246,14 +218,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 25rem;
 	cursor: pointer;
 }
 
 .swish {
-	width: 15rem;
-	height: 5rem;
 	background-color: #f4f4f4;
+	margin-top: 6rem;
+	width: 60%;
 	padding: 1.5rem;
 	border-radius: 0.5rem;
 }

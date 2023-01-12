@@ -82,8 +82,8 @@ const Payment = ({ order, onClose }) => {
 			<div
 				className={`${classes["order-bottom"]} ${classes["dining-options"]}`}
 			>
-				<div>
-					<label>Order Type</label>
+				<div className={classes["order-type__wrapper"]}>
+					<label className={classes["order-type__label"]}>Order Type</label>
 					<select>
 						<option value={order}> {order}</option>
 					</select>
@@ -91,21 +91,25 @@ const Payment = ({ order, onClose }) => {
 				<div>
 					{order === "Dine In" && (
 						<>
-							<label style={{ marginRight: "20px" }}>Table no.</label>
+							<label className={classes["order-type__label"]}>Table no.</label>
 							<input type="number" placeholder="table number" />
 						</>
 					)}
 					{order === "To Go" && (
 						<>
 							{" "}
-							<label>Choose Time</label>
+							<label className={classes["order-type__label"]}>
+								Choose Time
+							</label>
 							<input type="time" />
 						</>
 					)}
 					{order === "Delivery" && (
 						<>
 							{" "}
-							<label>Adress & Phone</label>
+							<label className={classes["order-type__label"]}>
+								Adress & Phone
+							</label>
 							<input type="text" placeholder="Enter Your Adress" />
 						</>
 					)}

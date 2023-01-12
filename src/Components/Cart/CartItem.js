@@ -8,7 +8,7 @@ const CartItem = ({ image, title, price, qty, id }) => {
 
 	return (
 		<>
-			<Stack direction="vertical" gap={2}>
+			<Stack direction="vertical">
 				<div className={classes.header}>
 					<img
 						src={image}
@@ -30,6 +30,7 @@ const CartItem = ({ image, title, price, qty, id }) => {
 							${price.toFixed(2)}{" "}
 						</div>
 					</div>
+					{/* <div> */}
 					<input
 						type="number"
 						as="select"
@@ -51,6 +52,7 @@ const CartItem = ({ image, title, price, qty, id }) => {
 						${+(price * qty).toFixed(2)}{" "}
 					</div>
 				</div>
+				{/* </div> */}
 			</Stack>
 			<Stack>
 				<div className={classes.el}>
