@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
-import classes from "./menuContainer.module.css";
+import "./menuContainer.module.css";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Badge, Button } from "react-bootstrap";
 import { CartContext } from "../data/CartContext";
@@ -23,32 +23,64 @@ const CartMenu = () => {
       <Dropdown.Menu
         className="cart-dropdown-menu"
         style={{
-          minWidth: 100,
+          minWidth: "100",
           textAlign: "center",
-          padding: "20px",
-          marginLeft: "-60px",
+          paddingBottom: "30px",
+          paddingLeft: "30px",
+          paddingRight: "30px",
+          marginLeft: "170px",
+          marginTop: "-200px",
+          backgroundColor: "#565e64",
+          border: "solid",
+          borderSize: "1px",
+          borderColor: "white",
+          color: "black",
+          fontSize: "16px",
+          fontWeight: "bold",
         }}
       >
         {cart.length > 0 ? (
           <>
             {cart.map((item) => (
-              <span key={item.id} className="cartitem">
+              <span key={item.id} className="cartItem">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="cartItemImg"
+                  style={{
+                    marginTop: "20px",
+                    marginBottom: "5px",
+                  }}
                 />
                 <div className="cartItemDetail">
-                  <span>{item.title}</span>
-                  <span>
-                    {item.price.toFixed(2)} * {item.qty} qty
+                  <span
+                    style={{
+                      fontFamily: "Barlow-Regular",
+                    }}
+                  >
+                    {item.title}{" "}
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "Barlow-Regular",
+                      textDecoration: "underline",
+                      fontSize: "18px",
+                    }}
+                  >
+                    ${item.price.toFixed(2)} x {item.qty} pcs
                   </span>
                 </div>
               </span>
             ))}
             <Dropdown.Item>
               <Button
-                style={{ width: "95%", margin: "0 10px" }}
+                style={{
+                  width: "95%",
+                  marginTop: "10px",
+                  marginBottom: "-15px",
+                  backgroundColor: "#ea7c69",
+                  borderColor: "#ea7c69",
+                }}
                 onClick={handleShow}
               >
                 Go To Cart

@@ -3,6 +3,8 @@
   src: url(../styles/fonts/Barlow-SemiBold.ttf) format("truetype");
 }
 
+/* do we need this when it is bootstrap???? */
+
 .menu-wrapper {
   max-width: 100%;
 }
