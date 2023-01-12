@@ -23,13 +23,13 @@ const CartMenu = () => {
       <Dropdown.Menu
         className="cart-dropdown-menu"
         style={{
-          minWidth: "100",
+          maxWidth: "100",
+          maxHeight: "70vh",
           textAlign: "center",
           paddingBottom: "30px",
-          paddingLeft: "30px",
-          paddingRight: "30px",
-          marginLeft: "170px",
-          marginTop: "-200px",
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          marginLeft: "-50px",
           backgroundColor: "#565e64",
           border: "solid",
           borderSize: "1px",
@@ -37,6 +37,7 @@ const CartMenu = () => {
           color: "black",
           fontSize: "16px",
           fontWeight: "bold",
+          overflowY: "scroll",
         }}
       >
         {cart.length > 0 ? (
@@ -55,7 +56,7 @@ const CartMenu = () => {
                 <div className="cartItemDetail">
                   <span
                     style={{
-                      fontFamily: "Barlow-Regular",
+                      paddingLeft: "5px",
                     }}
                   >
                     {item.title}{" "}
